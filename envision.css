@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&family=Rubik+Distressed&display=swap');
+
+@font-face{
+    font-family: "circular-std";
+    src: url("circular-std.ttf");
+}
+#cursor {
+    position: fixed;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 100%;
+    pointer-events: none;
+    left: -100px;
+    top: 50%;
+    mix-blend-mode: difference;
+    height: 32px;
+    width: 32px;
+    z-index: 99999;
+  }
+  #cursor.hover {
+    transform: scale(2) translateX(-25%) translateY(-25%);
+    background: beige;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+  #cursor.hover-off{
+    transform: scale(0) translateX(-25%) translateY(-25%);
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    line-height: 1.5;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.top-left{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 2rem;
+    filter: invert(1);
+    width: 100%;
+    align-items: center;
+}
+.top-left img{
+    width: 2em;
+    height: 2em;
+}
+.top-left p{
+    padding-left: 2%;
+}
+/* resume */
+.top-left a{ 
+    margin-left: auto;
+    margin-right: 5em;
+}
+.top-left a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: brown;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.top-left a:hover::after{
+    width: 100%;
+}
