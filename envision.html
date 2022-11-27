@@ -13,12 +13,115 @@
 <body>
     <header>
         <div class="top-left">
-            <img src="images/two-fall-plant-leaves.png" alt="personal logo placeholder" class="hover-target">
+            <a href="index.html"><img src="images/two-fall-plant-leaves.png" alt="personal logo placeholder" class="hover-target"></a>
             <p>sonia lin</p>
-            <a href="RESUME_LIN_Sonia.pdf" class="hover-target">resume</a>
+            <a href="RESUME_LIN_Sonia.pdf" class="hover-target resume">resume</a>
         </div>
+        <div class="header-title">
+            <h1>envision: mobile app interface</h1>
+            <p>2022</p>
+        </div>
+        <a href="#main"><div class="arrow"></div></a>
     </header>
-    <main>
+    <main id="main">
+        <h2>overview</h2>
+        <p>The aim of this project is to provide an organized and convenient way for students to discover suitable internships or job opportunities that cater to their preferences and experiences. The product gathers information about different opportunities available and allows users to filter through or sort the entries according to their specific interests. 
+            <br><br>Many students that are looking for academic opportunities or experiences often have to explore these options through various different websites like Indeed and Glassdoor and end up having trouble organizing and managing their options, adding on to the pressure and stress they are already enduring.  The product also focuses on giving students the opportunity to connect with other experienced students or graduates to encourage networking and to seek advice. This enables them to have more confidence in their resume and preparation for interviews. 
+        </p>
+            <h2>problem statement</h2>
+            <p>College students want an organizational and networking system for job/internships because they find it overwhelming and stressful when searching for professional opportunities.</p>
+            <h2>audience | personas</h2>
+            <h3>primary persona: university students</h3>
+            <p>The targeted audience of this project is mainly students that are interested in hunting for internships or job opportunities. Students should be able to build their user profiles and add a quick link to their resume. When searching for opportunities, they can filter through tags such as experience level, field of interest, locations, etc. Another important feature would be to filter out positions with unfulfilled requirements (eg. insufficient gpa, not graduating year). 
+
+                <br><br><h3>secondary persona: company recruiters</h3>A secondary persona of the project are companies or small startups that are interested in recruiting university students to work for them. They should be able to view students' information and resume details and be able to contact them in-app if desired. Moreover, they should also be able to send mass emails/announcements to groups of students based on their institution or university in order to promote themselves. 
+                
+                <br><br><h3>secondary persona: alumni</h3>Another secondary persona would be previous students that have worked at certain companies before. They are available to help students if contacted about their resume or the application process. They can also provide ratings of their experience at the company and whether the position is suitable for them. 
+                </p>
+                <div class="maps">
+                    <img src="images/file cover - 1.png" alt="primary persona map">
+                    <img src="images/file cover - 2.png" alt="secondary persona map">
+                    <img src="images/file cover - 3.png" alt="secondary persona map">
+                </div>
+            <img src="images/empathy-map.png" alt="quick sketch of smpathy maps of primary persona">
+            <h2>key features</h2> 
+            <p>To start off the design process, I performed some basic research on different existing career 
+                placement apps, such as Indeed and Handshake. I took note of the basic features that were 
+                present and thought about ways to implement those into my app. 
+            </p><br>
+            <h3>filtering and sorting</h3>
+            <p>One of the product’s key actions is narrowing down the search for internship/job positions to cater the user’s preferences by sorting and filtering their search results. Oftentimes students may be overwhelmed by the massive number of different positions available and do not know where to start. Sorting and filtering can reduce that anxiety while job searching. Results can be sorted by popularity, number of applicants, deadline dates, and date posted. They can also be filtered by location, job type, and paid/unpaid, etc. Regarding location, users may use a special key feature for locating internship/job locations close to their home and visualize it on the map. This will help those who do not have the ability to travel elsewhere find feasible locations to work at. 
+
+                <br><br><h3>networking</h3>Another key feature of this product is the ability to connect with other students based on the internships/jobs they have already completed. There is a message feature that should help students communicate with each other regarding skills, experiences, and recommendations. They can also contact them outside of the app via email, but it is much less overwhelming when you keep everything related to career searching in one place. Users should also be able to view other people’s profiles and see their resume. It may be helpful to see what skills are useful in students that are accepted to popular positions. 
+                
+                <br><br><h3>bookmarking</h3>Lastly, another key action is bookmarking entries into their library to save for later. Similar to search functionality, they can also sort and filter their bookmarks if they have many saved entries. One extra detail I wanted to implement that I did not get a chance to do was to create custom folders/categories for the saved entries. This would improve organization and management for students who end up applying for hundreds of positions. 
+                </p>
+                <br>
+            <h2>design process</h2>
+            <h3>first iteration design: wireframes</h3>
+            <p>Jumping into the actual design constructed on Figma, I started with low fidelity wireframes 
+                that outlined that overall layout of the app. I knew I wanted the app to be a mobile 
+                design as I found job hunting to be more convenient on mobile devices. In the navigation bar, 
+                I included four main pages: home / search, bookmarks, inbox, and user profile / settings. I initially 
+                wanted home and search to be on separate pages, but I found it more convenient and condensed after placing them
+                in the same page.<br><br>For the networking and messaging 
+                features, I used the base design of Linkedin and Gmail as a reference. For the bookmarking feature, I 
+                used library / comic apps as a reference as they are great for organization and management.  
+                <br><br>No color or aesthetic design 
+                choices were made yet during this phase of the design process so that I would not be distracted from 
+                focusing on the functionality.
+            </p><br>
+            <div class="wireframe">
+                <img src="images/main 1.jpg" alt="wireframe of main-1 settings">
+                <img src="images/main 2.jpg" alt="wireframe of main-2 settings">
+                <img src="images/filter 1.jpg" alt="wireframe of filter-1 settings">
+                <img src="images/filter 2.jpg" alt="wireframe of filter-2 settings">
+            </div>
+            <h3>second iteration design: mockup</h3>
+            <p>After organizing the core features of the product, I had to decide which colors to use 
+                for my app. I wanted the app to be simple and clearcut, so I started out with two main colors: black and orange. 
+                I mainly chose orange to distinguish it from similar apps (blue for Indeed, green for Glassdoor, red for Handshake).
+                <br><br>Once I was completed with the main pages of the app, I focused on delivering a clear onboarding process. Users 
+                would have to register, setup their profiles, and upload their resumes before they bould begin searching and connecting 
+                with others. I wanted to ensure the onboarding was as smooth and intuitve as possible, and could be completed within 
+                just a few steps. 
+            </p>
+            <div class="wireframe">
+                <img src="images/login.png" alt="mockup of login screen">
+                <img src="images/register.png" alt="mockup of registration screen">
+                <img src="images/getting started.png" alt="mockup of getting started screen">
+                <img src="images/getting started_ write about.png" alt="mockup of getting started (write about yourself) screen">
+            </div>
+            <h2>solution prototype</h2>
+            <h3>third and final iteration: interactive prototype</h3>
+            <p>Regarding the color scheme, I had decided to add another color to enhance some of the actions 
+                in the app. I used a color that I thought would complement the orange that was prominent 
+                throughout the product. <br><br>
+                After receiving user feedback on my app, I made edits throughout the design to ensure the font sizes were 
+                large enough to be clear and legible. I also added a few small details to make the app more functional and intuitive, 
+                such as adding a delete entry option by swiping right. I made sure to realign and rearrange elements as needed to ensure the placements were pixel perfect 
+                so that small changes between screens were not recognizable to the user's eye.
+                <br><br>Here is my final prototype. (may take a bit to load)
+            </p>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FEgNYbSgoDOCr2SVxICKkvp%2FDP1-Prototype%3Fnode-id%3D0%253A1%26t%3DP0gZTdyz0EX7q9Me-1" allowfullscreen></iframe>
+            <br><p>Here is the interactive flow for my final prototype as well.</p>
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="900" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEgNYbSgoDOCr2SVxICKkvp%2FDP1-Prototype%3Fnode-id%3D76%253A264%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D76%253A264%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+            <h2>user feedback</h2>
+            <p>I received lots of useful user feedback after the completion of this project. I definitely could review the color scheme a bit more 
+                to design a more welcoming look and carefully choose where to use my colors. A good way to fix this for future projects is to develop a 
+                color layout format beforehand in order to visualize my app better. <br><br>Another important tip that I received was to include 
+                scrollable screens into my prototype to develop a better sense of how to app would actually function and how the user would navigate it. 
+                I also learned that I should have included example text or images for all the elements that needed it. 
+            </p>
+            <h2>next steps for envision</h2>
+            <p>To improve the organization and management of the bookmarked positions, i would like to implement custom folders or categories that can be added by the users. This feature can be used to separate already applied positions or ‘will-apply-to’ positions, or categorize different types of positions if the user is interested in multiple subjects or career choices. 
+
+                <br><br>Another additional feature that I would like to add would be leaving reviews or ratings on positions or companies. There is a high chance that students will apply to lesser known positions at small startup companies, but they have no information about their reputation or work experience. Reviews and ratings can influence students’ decisions on whether or not they want to spend time applying to a specific position. 
+                </p>
+            <h2>takeaways</h2>
+            <p>Overall, this project taught me a lot about the design process, how to make good design choices, and the importance of user testing and user feedback in product design. 
+                I learned a lot about what I can improve through user feedback and instructor advice that could help me on my future design projects. 
+            </p>
     </main>
         <script src="effects.js"></script>
         <script src="cursor.js"></script>
