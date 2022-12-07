@@ -146,3 +146,7 @@ main img{
     width: 30%;
     margin: 2%;
 }
+
+iframe{
+    width: 100%;
+}
