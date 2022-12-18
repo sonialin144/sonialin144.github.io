@@ -111,6 +111,7 @@ header{
     filter: invert(1);
     width: 100%;
     align-items: center;
+    /* overflow: hidden; */
 }
 .top-left img{
     width: 2em;
@@ -123,6 +124,7 @@ header{
 .top-left a{ 
     margin-left: auto;
     margin-right: 5em;
+    /* overflow: hidden; */
 }
 .top-left a::after{
     content: '';
@@ -342,7 +344,7 @@ header{
     width: 1.5em;
     height: 1.5em;
     position: absolute;
-    top: 15%;
+    top: 5vw;
     right: 10%;
     transition: transform 1s ease;
     cursor: pointer;
@@ -472,7 +474,7 @@ main h1{
     transition: all 1s ease;
     opacity: 0;
 }
-.envision, .astro, .hunt, .job, .yg, .ari{
+.envision, .astro, .hunt, .job, .yg, .ari, .edel{
     cursor: pointer;
 }
 .silly{
@@ -502,8 +504,11 @@ main h1{
 .port{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/idk.jpg");
 }
+.edel{
+    background-image: url("images/edel.png");
+}
 
-.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant{
+.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel{
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
@@ -518,10 +523,11 @@ main h1{
         /* margin-bottom: 50%; */
     }
     .graphic{
-        transform: translate(60%, -5%);
+        transform: translate(60%, -5%) scale(100%);
     }
     .header-container{
-        transform: translate(-50%, 180%) scale(75%);
+        transform: translate(-50%, 50%) scale(70%);
+        bottom: 0%;
     }
 }
 
@@ -534,6 +540,8 @@ main h1{
         border: 1px solid white;
         width: 100%;
         height: 15em;
+        /* margin: 0% 1%; */
+        box-sizing: border-box;
     }
     .item:hover{
         transform: none;
@@ -542,6 +550,31 @@ main h1{
         transform: translate(60%, -5%);
     }
     .header-container{
-        transform: translate(-50%, 180%) scale(75%);
+        transform: translate(-50%, 50%) scale(60%);
+    }
+    .about-panel, .contact-panel{
+        width: 50%;
+    }
+    .about-panel img, .contact-panel img{
+        top: 6vw;
+    }
+}
+
+@media (max-width: 481px){
+    .graphic{
+        transform: translate(35%,-15%) scale(75%);
+    }
+    .header-container{
+        transform: translate(-50%, 50%) scale(50%);
+        bottom: 5%;
+    }
+    .external-links-container{
+        display: none;
+    }
+    .about-panel, .contact-panel{
+        width: 70%;
+    }
+    .about-panel img, .contact-panel img{
+        top: 8vw;
     }
 }
