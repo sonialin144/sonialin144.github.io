@@ -150,3 +150,12 @@ main img{
 iframe{
     width: 100%;
 }
+
+@media (max-width: 768px){
+    #main{
+        width: 80%;
+    }
+    .maps, .wireframe{
+        overflow: auto;
+    }
+}
