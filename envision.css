@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300&family=Rubik+Distressed&display=swap');
 
 @font-face{
@@ -6,7 +13,9 @@
 }
 #cursor {
     position: fixed;
-    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
     border-radius: 100%;
     pointer-events: none;
     left: -100px;
@@ -17,13 +26,21 @@
     z-index: 99999;
   }
   #cursor.hover {
-    transform: scale(2) translateX(-25%) translateY(-25%);
+    -webkit-transform: scale(2) translateX(-25%) translateY(-25%);
+        -ms-transform: scale(2) translateX(-25%) translateY(-25%);
+            transform: scale(2) translateX(-25%) translateY(-25%);
     background: beige;
     opacity: 1;
+    -webkit-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease;
   }
   #cursor.hover-off{
-    transform: scale(0) translateX(-25%) translateY(-25%);
+    -webkit-transform: scale(0) translateX(-25%) translateY(-25%);
+        -ms-transform: scale(0) translateX(-25%) translateY(-25%);
+            transform: scale(0) translateX(-25%) translateY(-25%);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     opacity: 0;
   }
@@ -44,13 +61,21 @@ a{
 }
 
 .top-left{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     position: absolute;
     padding: 2rem;
-    filter: invert(1);
+    -webkit-filter: invert(1);
+            filter: invert(1);
     width: 100%;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background-color: white;
 }
 .top-left img{
@@ -72,6 +97,8 @@ a{
     background: brown;
     display: block;
     margin: auto;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 .resume:hover::after{
@@ -93,7 +120,9 @@ header{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     /* margin: 0 auto; */
     z-index: 1000;
     text-align: center;
@@ -104,16 +133,27 @@ header{
     position: absolute;
     bottom: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 1.5em;
     height: 1.5em;
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 #main{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 60%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     color: white;
     margin: 5% auto;
 }
@@ -133,10 +173,17 @@ main img{
 }
 
 .maps, .wireframe{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .maps img{
     width: 50%;
