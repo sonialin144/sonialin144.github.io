@@ -64,4 +64,5 @@ function reveal(){
     document.querySelector(".job").addEventListener("click", ()=>{window.location = "https://bxscience.edu/pdf/JOB2019-2020.pdf";})
     document.querySelector(".yg").addEventListener("click", ()=>{window.location = "https://www.younggovernors.org/2020-food-culture";})
     document.querySelector(".edel").addEventListener("click", ()=>{window.location = "https://www.figma.com/file/QLCEYS9YnqkoIpw3AbygeH/DP2-Prototype?node-id=0%3A1&t=e9TWnZzo0pLpq1U8-1";})
+    document.querySelector(".roguelite").addEventListener("click", ()=>{window.location = "https://sonialin.itch.io/idk";})
 });

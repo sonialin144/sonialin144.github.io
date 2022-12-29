@@ -163,11 +163,11 @@ header{
     transform: translate(-50%, -50%) scale(75%); */
     /* position: absolute; */
     font-family: 'Fredoka One', cursive;
-    font-size: 40px;
+    font-size: 80px;
     letter-spacing: 5px;
     width: max-content;
-    height: 3em;
-    line-height: 3em;
+    height: 2em;
+    line-height: 2em;
     overflow: hidden;
     /* font-weight: 100; */
 }
@@ -179,6 +179,7 @@ header{
     /* position: absolute; */
     width: max-content;
     /* font-family: 'Poppins', sans-serif; */
+    font-size: 24px;
 }
 
 .title-container h1 {
@@ -507,8 +508,14 @@ main h1{
 .edel{
     background-image: url("images/edel.png");
 }
+.roguelite{
+    background-image: url("images/roguelite.png");
+}
+.plant{
+    background-image: url("images/plant.png");
+}
 
-.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel{
+.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel,.roguelite{
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
