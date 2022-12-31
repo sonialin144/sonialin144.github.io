@@ -766,7 +766,7 @@ main h1{
     transition: all 1s ease;
     opacity: 0;
 }
-.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite{
+.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite,.art{
     cursor: pointer;
 }
 .silly{
@@ -794,9 +794,7 @@ main h1{
     background-image: url("images/yg.png");
 }
 .port{
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
-    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/idk.jpg");
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/idk.jpg");
+    background-image: url("images/port.png")
 }
 .edel{
     background-image: url("images/edel.png");
@@ -810,8 +808,13 @@ main h1{
 .study{
     background-image: url("images/study.png");
 }
+.art{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/idk.jpg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/idk.jpg");
+}
 
-.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel,.roguelite,.study{
+.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel,.roguelite,.study,.art{
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
