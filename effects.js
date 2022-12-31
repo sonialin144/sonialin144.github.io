@@ -56,6 +56,7 @@ function reveal(){
     }
 }
   
+// i dont remember why i added links this way 
   window.addEventListener("load", function() {
     document.querySelector(".envision").addEventListener("click", ()=>{window.location = "envision.html";})
     document.querySelector(".astro").addEventListener("click", ()=>{window.location = "https://sonialin.itch.io/the-adventures-of-astro-boy";})
@@ -65,4 +66,5 @@ function reveal(){
     document.querySelector(".yg").addEventListener("click", ()=>{window.location = "https://www.younggovernors.org/2020-food-culture";})
     document.querySelector(".edel").addEventListener("click", ()=>{window.location = "https://www.figma.com/file/QLCEYS9YnqkoIpw3AbygeH/DP2-Prototype?node-id=0%3A1&t=e9TWnZzo0pLpq1U8-1";})
     document.querySelector(".roguelite").addEventListener("click", ()=>{window.location = "https://sonialin.itch.io/idk";})
+    document.querySelector(".study").addEventListener("click", ()=>{window.location = "https://github.com/sonialin144/studythree";})
 });

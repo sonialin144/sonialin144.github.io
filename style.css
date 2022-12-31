@@ -766,7 +766,7 @@ main h1{
     transition: all 1s ease;
     opacity: 0;
 }
-.envision, .astro, .hunt, .job, .yg, .ari, .edel{
+.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite{
     cursor: pointer;
 }
 .silly{
@@ -807,8 +807,11 @@ main h1{
 .plant{
     background-image: url("images/plant.png");
 }
+.study{
+    background-image: url("images/study.png");
+}
 
-.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel,.roguelite{
+.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel,.roguelite,.study{
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
