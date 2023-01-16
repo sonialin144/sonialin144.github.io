@@ -657,9 +657,7 @@ main h1{
     border-radius: 10px;
     /* box-shadow: 15px 15px #D88849; */
     height: 10em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -766,7 +764,7 @@ main h1{
     transition: all 1s ease;
     opacity: 0;
 }
-.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite,.art{
+.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite,.art,.cygnus{
     cursor: pointer;
 }
 .silly{
@@ -813,13 +811,44 @@ main h1{
     background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/idk.jpg");
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/idk.jpg");
 }
+.cygnus{
+    /* background-image: url("images/cygnus.jpg"); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/cygnus.jpg");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/cygnus.jpg");
+}
 
-.silly,.envision,.disease,.astro,.hunt,.ari,.job,.yg,.port,.plant,.edel,.roguelite,.study,.art{
+.item{
     background-attachment: fixed; /* Parallax effect */     
     background-position: center;  /* Parallax effect */
     background-repeat: no-repeat; /* Parallax effect */
     background-size: cover;       /* Parallax effect */
 }
+
+.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .filter-button-container{
+    width: 100%;
+    margin: 2% 7.5%;
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .btn{
+    background-color: black;
+    color: white;
+    padding-right: 2%;
+    cursor: pointer;
+  }
+  .btn.active{
+    font-weight: bolder;
+    text-shadow: 0 0  5px grey;
+  }
 
 @media (max-width: 1025px){
     .projects-container{
