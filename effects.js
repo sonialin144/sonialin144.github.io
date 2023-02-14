@@ -69,6 +69,7 @@ function reveal(){
     document.querySelector(".roguelite").addEventListener("click", ()=>{window.location = "https://sonialin.itch.io/idk";})
     document.querySelector(".study").addEventListener("click", ()=>{window.location = "https://github.com/sonialin144/studythree";})
     document.querySelector(".art").addEventListener("click", ()=>{window.location = "art.html";})
+    document.querySelector(".airplay").addEventListener("click", ()=>{window.location = "https://www.igym.solutions";})
 });
 
 //filter selection 

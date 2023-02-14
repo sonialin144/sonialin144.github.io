@@ -764,7 +764,7 @@ main h1{
     transition: all 1s ease;
     opacity: 0;
 }
-.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite,.art,.cygnus{
+.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite,.art,.cygnus, .airplay{
     cursor: pointer;
 }
 .silly{
@@ -805,6 +805,9 @@ main h1{
 }
 .study{
     background-image: url("images/study.png");
+}
+.airplay{
+    background-image: url("images/airplay.png");
 }
 .art{
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
