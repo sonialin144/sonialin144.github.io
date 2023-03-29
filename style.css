@@ -633,6 +633,9 @@ main h1{
         -ms-flex-pack: center;
             justify-content: center;
 }
+main{
+    padding-bottom: 15%;
+}
 .projects-container{
     display: -ms-grid;
     display: grid;
@@ -819,6 +822,18 @@ main h1{
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
     background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/cygnus.jpg");
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/cygnus.jpg");
+}
+.tennis{
+    /* background-image: url("images/cygnus.jpg"); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/tennis.png");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/tennis.png");
+}
+.train{
+    /* background-image: url("images/cygnus.jpg"); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/train.png");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/train.png");
 }
 
 .item{
