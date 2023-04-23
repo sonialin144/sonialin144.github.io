@@ -70,6 +70,9 @@ function reveal(){
     document.querySelector(".study").addEventListener("click", ()=>{window.location = "milk.html";})
     document.querySelector(".art").addEventListener("click", ()=>{window.location = "art.html";})
     document.querySelector(".airplay").addEventListener("click", ()=>{window.location = "https://www.igym.solutions";})
+    document.querySelector(".tennis").addEventListener("click", ()=>{window.location = "gogotennis.html";})
+    document.querySelector(".train").addEventListener("click", ()=>{window.location = "train.html";})
+
 });
 
 //filter selection 
