@@ -60,8 +60,8 @@ function reveal(){
   window.addEventListener("load", function() {
     document.querySelector(".cygnus").addEventListener("click", ()=>{window.location = "https://devpost.com/software/cygnus";})
     document.querySelector(".envision").addEventListener("click", ()=>{window.location = "envision.html";})
-    document.querySelector(".astro").addEventListener("click", ()=>{window.location = "https://sonialin.itch.io/the-adventures-of-astro-boy";})
-    document.querySelector(".hunt").addEventListener("click", ()=>{window.location = "https://tommyho.itch.io/yume";})
+   // document.querySelector(".astro").addEventListener("click", ()=>{window.location = "https://sonialin.itch.io/the-adventures-of-astro-boy";})
+   // document.querySelector(".hunt").addEventListener("click", ()=>{window.location = "https://tommyho.itch.io/yume";})
     document.querySelector(".ari").addEventListener("click", ()=>{window.location = "https://sonialin144.github.io/si-project-ari-site/";})
     document.querySelector(".job").addEventListener("click", ()=>{window.location = "https://bxscience.edu/pdf/JOB2019-2020.pdf";})
     document.querySelector(".yg").addEventListener("click", ()=>{window.location = "https://www.younggovernors.org/2020-food-culture";})
