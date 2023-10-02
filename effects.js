@@ -72,6 +72,9 @@ function reveal(){
     document.querySelector(".airplay").addEventListener("click", ()=>{window.location = "https://www.igym.solutions";})
     document.querySelector(".tennis").addEventListener("click", ()=>{window.location = "gogotennis.html";})
     document.querySelector(".train").addEventListener("click", ()=>{window.location = "train.html";})
+    document.querySelector(".cse-sim").addEventListener("click", ()=>{window.location = "cse-sim.html";})
+    document.querySelector(".miverse").addEventListener("click", ()=>{window.location = "miverse.html";})
+
 
 });
 

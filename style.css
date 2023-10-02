@@ -767,7 +767,7 @@ main{
     transition: all 1s ease;
     opacity: 0;
 }
-.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite,.art,.cygnus, .airplay, .tennis, .train{
+.envision, .astro, .hunt, .job, .yg, .ari, .edel, .study, .roguelite,.art,.cygnus, .airplay, .tennis, .train, .miverse, .cse-sim{
     cursor: pointer;
 }
 .silly{
@@ -834,6 +834,20 @@ main{
     background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
     background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/train.png");
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/train.png");
+}
+
+.cse-sim{
+    /* background-image: url("images/cygnus.jpg"); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/cse-sim.png");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/cse-sim.png");
+}
+
+.miverse{
+    /* background-image: url("images/cygnus.jpg"); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/miverse.PNG");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/miverse.PNG");
 }
 
 .item{

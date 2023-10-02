@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href = "art.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | cse simulator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <style>
+            header{
+                background-image: linear-gradient(#4b77b6, #90D9BC);
+            }
+        </style>
+        <div class="top-left">
+            <a href="index.html"><img src="images/two-fall-plant-leaves.png" alt="personal logo placeholder" class="hover-target"></a>
+            <p>sonia lin</p>
+            <a href="RESUME_LIN_Sonia.pdf" class="hover-target resume">resume</a>
+        </div>
+        <div class="header-title">
+            <h1>MIverse</h1>
+            <p>learn about XR by interacting with characters in a cyberpunk universe!</p>
+            <!-- <p>2022</p> -->
+        </div>
+        <a href="#main"><div class="arrow"></div></a>
+    </header>
+    <main id="main">
+        <p>We built this interactive PC/VR demo to showcase at our booth at the university's club fair. 
+            It serves as an engaging exhibit to help recruit more members for the XR club. 
+            We built both a PC version and VR version: the PC version is used for our outdoor exhibit where
+            VR would not be feasible to use, and the VR version is for students to play and build additional
+            features when they join the club as a series of Unity/Blender workshops. <br><br>
+            Key Features: 
+            <ul>
+                <li>Users can walk around and interact with various characters explaining the three categories
+                    of XR: AR, VR, MR. 
+                </li>
+                <li>
+                    Users can draw virtual graffiti on the walls in VR. 
+                    <ul>
+                        <li>In the PC version, users can draw their designs
+                            on a piece of paper. Once we take a picture of the drawing on our phone and import
+                        it into a folder on our PC, our app will automatically convert it into a transparent png 
+                    using a FloodFill algorithm and prompts the user to place their graffiti on the wall.</li>
+                    <li>In the VR version, users can draw on the walls using their controllers.</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>  
+        <p><br></p>
+        <a href="https://github.com/Alternate-Reality-Initiative/ARI_MIVERSE">Link to Repository</a>
+    </main>
+        <script src="effects.js"></script>
+        <script src="cursor.js"></script>
+        <div class='cursor' id="cursor"></div>
+</body>
+</html>
