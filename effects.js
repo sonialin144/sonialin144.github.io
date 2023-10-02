@@ -74,6 +74,10 @@ function reveal(){
     document.querySelector(".train").addEventListener("click", ()=>{window.location = "train.html";})
     document.querySelector(".cse-sim").addEventListener("click", ()=>{window.location = "cse-sim.html";})
     document.querySelector(".miverse").addEventListener("click", ()=>{window.location = "miverse.html";})
+    document.querySelector(".nuclear").addEventListener("click", ()=>{window.location = "nuclear.html";})
+    document.querySelector(".witch").addEventListener("click", ()=>{window.location = "witch.html";})
+    document.querySelector(".detroit").addEventListener("click", ()=>{window.location = "detroit.html";})
+
 
 
 });
