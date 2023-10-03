@@ -77,6 +77,8 @@ function reveal(){
     document.querySelector(".nuclear").addEventListener("click", ()=>{window.location = "nuclear.html";})
     document.querySelector(".witch").addEventListener("click", ()=>{window.location = "witch.html";})
     document.querySelector(".detroit").addEventListener("click", ()=>{window.location = "detroit.html";})
+    document.querySelector(".plant").addEventListener("click", ()=>{window.location = "plant.html";})
+    document.querySelector(".claws").addEventListener("click", ()=>{window.location = "https://claws.engin.umich.edu/";})
 
 
 

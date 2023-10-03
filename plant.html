@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href = "art.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | daily daisies</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <style>
+            header{
+                background-image: linear-gradient(#4b77b6, #90D9BC);
+            }
+        </style>
+        <div class="top-left">
+            <a href="index.html"><img src="images/two-fall-plant-leaves.png" alt="personal logo placeholder" class="hover-target"></a>
+            <p>sonia lin</p>
+            <a href="RESUME_LIN_Sonia.pdf" class="hover-target resume">resume</a>
+        </div>
+        <div class="header-title">
+            <h1>Daily Daisies</h1>
+            <p>a plant mindfulness app for your wellbeing</p>
+            <!-- <p>2022</p> -->
+        </div>
+        <a href="#main"><div class="arrow"></div></a>
+    </header>
+    <main id="main">
+        <p>
+            As part of the AR Cohort at ARI (University of Michigan's XR Club), we made an augmented reality mobile app to manage wellbeing. 
+            Players can earn water by completing tasks and use that to tend to their virtual garden. With Niantic Lightship SDK, we utilized
+            their palm tracking feature to anchor the plant in real world space. This was my first XR-related project and I was able to practice
+            Unity and Blender and Git.
+
+            <br><br>
+
+            What I Worked On:
+            <ul>
+                <li>
+                    Create the AR camera and integrated palm tracking features with Niantic Lightship SDK 
+                </li>
+                <li>
+                    Created Scriptable Objects for plants and integrated plant selection
+                </li>
+                <li>
+                    3D modeled plant as part of the plant collection
+                </li>
+            </ul>
+        </p>  
+        <p><br></p>
+        <div class="art-container">
+            <img src="images/dd-1.PNG">
+            <img src="images/dd-2.PNG">
+            <img src="images/dd-3.PNG">
+        </div>
+    </main>
+        <script src="effects.js"></script>
+        <script src="cursor.js"></script>
+        <div class='cursor' id="cursor"></div>
+</body>
+</html>
