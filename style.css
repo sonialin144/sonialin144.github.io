@@ -879,6 +879,18 @@ main{
     background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/claws.PNG");
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/claws.PNG");
 }
+.niantic{
+    /* background-image: url("images/cygnus.jpg"); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/huh.png");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/huh.png");
+}
+.vocab{
+    /* background-image: url("images/cygnus.jpg"); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(4,9,30,0.7)),to(rgba(4,9,30,0.7))), url("images/idk.jpg");
+    background-image: -o-linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/vocab.png");
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("images/vocab.png");
+}
 
 .item{
     background-attachment: fixed; /* Parallax effect */     
