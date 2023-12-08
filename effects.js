@@ -81,7 +81,7 @@ function reveal(){
     document.querySelector(".plant").addEventListener("click", ()=>{window.location = "plant.html";})
     document.querySelector(".claws").addEventListener("click", ()=>{window.location = "https://claws.engin.umich.edu/";})
     document.querySelector(".vocab").addEventListener("click", ()=>{window.location = "vocab.html";})
-    document.querySelector(".vocab").addEventListener("click", ()=>{window.location = "niantic.html";})
+    document.querySelector(".niantic").addEventListener("click", ()=>{window.location = "niantic.html";})
     //deployment test
 
 });
