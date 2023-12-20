@@ -82,6 +82,7 @@ function reveal(){
     document.querySelector(".claws").addEventListener("click", ()=>{window.location = "https://claws.engin.umich.edu/";})
     document.querySelector(".vocab").addEventListener("click", ()=>{window.location = "vocab.html";})
     document.querySelector(".niantic").addEventListener("click", ()=>{window.location = "niantic.html";})
+    document.querySelector(".pico").addEventListener("click", ()=>{window.location = "pico.html";})
     //deployment test
 
 });
