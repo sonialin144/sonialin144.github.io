@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | misa</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <iframe class="header-video" height="480" src="https://www.youtube.com/embed/PRqL0o24czs?si=5064b5j8wSiOpaJB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="header">
+        <div class="header-title">
+            <h1>MISA: Mock Interview Simulator Assistant</h1>
+            <p>VR Interview Simulation
+                <br>
+                Won 1st Prize and Best Non-Game App <br>@ 2023 PICO Dev Jam
+            </p>
+            <div class="header-link"><a href="https://devpost.com/software/misa-mock-interview-simulator-assistant">Devpost</a></div>
+
+        </div>
+        <div class="header-desc">
+            MISA is a virtual mock interview simulator assistant that helps job seekers ace their behavioral interviews! By using PICO's interaction pack and the OpenAI API, MISA can evaluate users' spoken answers and face and body language to give helpful and dynamic advice on how users can improve their interviews.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Designer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Figma</li>
+                        <li>Blender</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Members</p>
+                    <ul>
+                        <li>Sonia Lin</li>
+                        <li>Emilee Meng</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Duration</p>
+                    <p>2 weeks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    Our project, MISA (Mock Interview Simulator Assistant), introduces an innovative approach to interview preparation by integrating artificial intelligence and virtual reality technologies. MISA's technical innovation centers on integrating cutting-edge AI, specifically the GPT-3 model by OpenAI, to dynamically engage and evaluate users in realistic interview simulations. Additionally, it utilizes the PICO headset’s interaction pack to monitor and assess non-verbal cues, such as facial expressions, eye movements, body language, and hand gestures, creating a highly immersive interview training experience.
+                    <br><br>
+                    The origins of this innovation can be traced back to the convergence of AI and VR and the need to address a significant challenge in the job market – the need to help job seekers improve their interview skills and boost their confidence. Traditional interview preparation methods, such as reading interview books or watching advice videos, often fall short in providing the kind of training and real-world experience that MISA aims to deliver. By integrating AI into a highly interactive VR environment, MISA seeks to transform the way individuals prepare for job interviews, addressing a previously underserved niche.
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    I worked on:
+                </p>
+                <ul>
+                    <li>3D modeled human form of MISA</li>
+                    <li>Illustrated MISA</li>
+                    <li>Prototyped UI mockups and interactions in Figma</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="desc-section">
+            <h1>ui design</h1>
+            <div class="desc-section-right">
+                <img src="images/misa-design-1.jpg">
+                <img src="images/misa-design-2.jpg">
+                <img src="images/misa-design-3.jpg">
+            </div>
+        </div> -->
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/misa-design-1.jpg',
+                'images/misa-design-2.jpg',
+                'images/misa-design-3.jpg',
+                'images/misa-design-4.png',
+                'images/misa-design-5.jpg',
+                'images/misa-design-6.jpg',
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

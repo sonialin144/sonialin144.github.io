@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | gogo tennis</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <iframe class="header-video" src="https://youtube.com/embed/pJMIDkWTKEo" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <div class="header">
+        <div class="header-title">
+            <h1>GOGO TENNIS</h1>
+            <p>
+                EECS 497 Final Project
+            </p>
+            <!-- <div class="header-link"><a href="https://devpost.com/software/mentar">Devpost</a></div> -->
+
+        </div>
+        <div class="header-desc">
+            <p>This game was created as the final project for the capstone course EECS 497: Human Centered Software Design and Development. We built a multiplayer fitness aplication that utilizes mobile phone gyroscope sensors and accelerometers as controller input.</p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>XR Developer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Meta Quest 3</li>
+                        <li>Meta Presence Platform</li>
+                        <li>Node.js</li>
+                        <li>HTML/CSS</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Members</p>
+                    <ul>
+                        <li>Xinying Chew</li>
+                        <li>Sonia Lin</li>
+                        <li>Emilee Meng</li>
+                        <li>Zhengyang Yang</li>
+                        <li>Yue You</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Duration</p>
+                    <p>2.5 days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    Our idea is to build a fitness app that encourages people to stay active through fun games and interactions. An activity we have currently implemented is tennis. All our users will need is a mobile device and a separate laptop/desktop screen. With this, users will be able perform physical activities within the comfort of their own home with devices they already have, making it an accessible service for many. Regarding the technical aspect, our project desires to take advantage of our phones’ motion sensors to track player arm movements and actions. 
+                    <br><br>
+                    Our app also aims to connect users through our multiplayer feature, as we want users to have fun with their friends while staying fit. Users will have to host a match on their computer on the local network, and then join as player clients on their mobile devices. We want to create software that allows people to easily connect in new ways. After the pandemic, many people have been negatively affected in forming social bonds, and so, by creating an easy-to-use and accessible app, users can use this app as a stepping stone to create memories.
+                    <br><br>
+                    We used Unity to build our app, Unity Netcode for our multiplayer feature, and Blender for our models.
+                </p>
+                <!-- <img src="images/airplay-overview.png"/> -->
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    As part of the team, I worked on:
+                </p>
+                <ul>
+                    <li>Utilized gyroscope sensors and accelerometers from phones to feed controller input for the in-game tennis racket</li>
+                    <li>Built tennis game (i.e. rules, player bounds, win-lose states)</li>
+                    <li>Implemented UI and animations</li>
+                    <li>Synchronized data across local devices (i.e. player positions, ball movement, scores)</li>
+                    <li>3D modeled one of the playable characters and illustrated mascot character</li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+                    <p>To be updated ...</p>
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/penguinImage.png',
+                'images/gogo-tennis-gallery-1.png'
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

@@ -4,52 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href = "art.css">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
     <link rel="icon" type="image/x-icon" href="">
     <title>sonia lin | claws</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
 </head>
 <body>
-    <header>
-        <style>
-            header{
-                background-image: linear-gradient(#4b77b6, #90D9BC);
-            }
-        </style>
-        <div class="top-left">
-            <a href="index.html"><img src="images/two-fall-plant-leaves.png" alt="personal logo placeholder" class="hover-target"></a>
-            <p>sonia lin</p>
-            <a href="RESUME_LIN_Sonia.pdf" class="hover-target resume">resume</a>
-        </div>
+    <iframe class="header-video" height="480" src="https://www.youtube.com/embed/6E4utYSxSXE?si=eyQIVjdPeqM15Jgh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="header">
         <div class="header-title">
             <h1>CLAWS</h1>
-            <p>developing AR interfaces for lunar astronauts</p>
-            <!-- <p>2022</p> -->
+            <p>Build Augmented Reality for NASA Astronauts
+                <br>
+                Nasa Suits Challenge 2023-2024
+            </p>
+            <div class="header-link"><a href="https://claws.engin.umich.edu/">Website</a></div>
         </div>
-        <a href="#main"><div class="arrow"></div></a>
-    </header>
-    <main id="main">
-        <p>CLAWS is a multi-disciplinary group of 60 undergraduate and graduate students that has competed in the NASA SUITS (Spacesuit User Interface Technologies for Students) Challenge since 2018. The team builds augmented reality (AR) interfaces to assist astronauts in their exploration of the lunar surface. CLAWS members have the opportunity to learn and apply industry skills in a collaborative project team, and engage with the broader space community.
-            <br><br>As part of the AR subteam, I am responsible for developing the spatial interfaces created by the UX Team. This involves front-end development (developing screens, UI functionality, implementing anything that the user sees or does). This also involves back-end development (software architecture, telemetry communication, MCC communication, VEGA integration).
+
+        <div class="header-desc">
+            <p>NASA SUITS challenges university teams to build spacesuit information displays within augmented reality (AR) environments. These holographic interfaces aim to assist astronauts exploring the lunar surface during future Artemis missions. At the end of the school year, teams are invited to the Johnson Space Center for Test Week, where designs are tested and evaluated by NASA designers, scientists, engineers, and astronauts.
             <br><br>
-            What I Worked On:
-            <ul>
-                <li>Implementing geosampling data</li>
-                <li>Developing photo capture features with the HoloLens including saving/loading</li>
-                <li>Integrating UI developed by the design team</li>
-                <li>Collaborated with others to integrate voice commands with geosampling</li>
-            </ul>
-        </p>
-        <div class="art-container">
-            <img src="images/geosample-1.PNG">
-            <img src="images/geosample-2.PNG">
-            <img src="images/geosample-3.PNG">
-            <img src="images/geosample-4.PNG">
+            The University of Michigan’s CLAWS (Collaborative Lab For Advancing Work in Space) Team is a multi-disciplinary group of undergraduate and graduate students that has competed in the NASA SUITS Challenge since 2018. CLAWS consists of 60 students from a broad set of majors working on research, design, business, and development for space exploration.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Software Developer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>MRTK</li>
+                        <li>HoloLens 2</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Team Size</p>
+                    <ul>
+                        <li>60 students</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>Mar 2023 - Present</p>
+                </div>
+            </div>
         </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    The AR Team is responsible for developing the spatial interfaces created by the UX Team. This involves front-end development (developing screens, UI functionality, implementing anything that the user sees or does). This also involves back-end development (software architecture, telemetry communication, MCC communication, VEGA integration).
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    As part of the AR sub-team, I worked on several features including: 
+                </p>
+                <ul>
+                    <li>Implemented geosampling data</li>
+                    <li>Developed photo capture features with the HoloLens including saving/loading</li>
+                    <li>Integrated UI developed by the design team</li>
+                    <li>Collaborated with others to integrate voice commands with geosampling</li>
+                    <li>Developed waypoints functionality (add/edit/delete) and collaborated with web team</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/geosample-1.PNG',
+                'images/geosample-2.PNG',
+                'images/geosample-3.PNG',
+                'images/geosample-4.PNG',
+            ];
+    
+            createGallery(imageSources);
+        </script> -->
     </main>
-        <script src="effects.js"></script>
-        <script src="cursor.js"></script>
-        <div class='cursor' id="cursor"></div>
 </body>
 </html>

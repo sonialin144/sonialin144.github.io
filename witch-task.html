@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | witch task</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <iframe class="header-video" height="480" src="https://www.youtube.com/embed/DDXr5ihO84U?si=Q9TxuwJyy9bUBcRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="header">
+        <div class="header-title">
+            <h1>Witch Task</h1>
+            <p>Gamified Productivity App
+                <br>
+                Indie Mobile App Development
+            </p>
+            <div class="header-link"><a href="https://witchtask.netlify.app/">Website</a></div>
+
+        </div>
+        <div class="header-desc">
+            Witch Task is a productivity tool for teens and young adults that provides a gamified systematic approach to task management, helping in time management, organization, and prioritization. This app aims to help individuals stay on top of their responsibilities in both their personal and work lives through immersive storytelling. This is built as a mobile app using Unity/C# with support for both iOS and Android.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Unity Developer</li>
+                        <li>Illustrator</li>
+                        <li>Animator</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Procreate</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Team Size</p>
+                    <ul>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>June 2023 - Present</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    Users play as a witch who just started a potion shop,  in a whimsical small town inhabited by mushroom villagers who are in need of potions daily, for their everyday needs. These potion orders then correspond to the user’s daily tasks that they input every morning. For example, if a user records that they need to do their “programming hw”, a mushroom villager will come in during the day requesting an “order” for “programming-hw potion”. 
+                    <br><br>
+                    Every Monday, when the user opens the app for the first time, the weekly tasks screen will open so users are able to plan their week ahead of time. Respectively, every other day when they first launch the app, the corresponding day’s tasks screen will open. 
+                    When a user wants to add a new task, they can click the new order button located at the top, which will then have the user record their task which includes the task name, description, difficulty, and deadline. Then by using a personalized algorithm that we are currently developing, tasks will be released in the form of “orders” by different mushroom villagers.
+                    <br><br>
+                    These mushroom villagers will then come into the shop during different times of the day(with a max being two mushrooms at a time), asking the player(the witch) to work on their orders. Once the player completes their task in real life, the player can complete the order in-app, and receive coins from the villager mushroom. The user can then use these coins to unlock more shop features and customizations.
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    As a core member of the team, I worked on several features including: 
+                </p>
+                <ul>
+                    <li>Illustrated and animated assets</li>
+                    <li>Designed and collaborated on UI/UX in Figma</li>
+                    <li>Programmed task management using priority queues, journal features (adding, removing, editing tasks)</li>
+                    <li>Programmed character customization</li>
+                    <li>Building website in React</li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    Our future steps include:
+                </p>
+                <ul>
+                    <li>
+                        Pomodoro timer once tasks start
+                    </li>
+                    <li>
+                        Character Animation
+                    </li>
+                    <li>
+                        Three different shops the player can purchase items from
+                    </li>
+                    <li>
+                        Potion shop enhancements and ranking
+                    </li>
+                    <li>
+                        Overarching village storyline
+                    </li>
+                    <li>
+                        Personalized quiz to figure out custom task management method
+                    </li>
+                    <li>
+                        Shop familiars that guide the user
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/witch.PNG',
+                'images/witch-home.PNG',
+                'images/witch-journal-add.PNG',
+                'images/witch-journal.PNG',
+                'images/witch-task-view.PNG',
+                'images/witch-character-design.PNG',
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

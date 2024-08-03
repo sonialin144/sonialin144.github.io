@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | greater heights</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <!-- <iframe class="header-video" src="https://player.vimeo.com/video/322096749?h=d4f046f705&color=f3f6f7&title=0&byline=0&portrait=0" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> -->
+    <img src="images/greater-heights.png" style="height: 600px; width: 100%; object-fit: cover;">
+    <div class="header">
+        <div class="header-title">
+            <h1>GREATER HEIGHTS VR</h1>
+            <p>Public Facing VR Flight Experience
+                <br>
+                Internship @ NASA Armstrong Flight Research Center
+            </p>
+            <!-- <div class="header-link"><a href="https://www.igym.solutions/">Website</a></div> -->
+
+        </div>
+        <div class="header-desc">
+            <p>The Greater Heights project is a Virtual Reality (VR) experience that aims to engage the public with the work that NASA does through interactive story telling and education. The experience started in 2020 and contains a story mode that allows the user to embody Neil Armstrong in an historic flight of the X-15.</p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Software Developer Intern</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Godot</li>
+                        <li>GDScript</li>
+                        <li>Blender</li>
+                        <li>Varjo VR</li>
+                        <li>Yaw Motion Chair</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Mentor</p>
+                    <ul>
+                        <li>Aamod Samuel</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>Jan 2024 - May 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    The Greater Heights VR development project is an intern-led project at NASA's Armstrong Flight Research Center. The experience is a story-driven flight simulation intended for public outreach and education. The narrative of the experience is intended to capture the imagination of users and take them on an immersive journey in the shoes of Neil Armstrong and his famous test flight of NASA’s X-15 aircraft. The user will be able to pilot the aircraft themselves allowing them to experience the same thrill Neil Armstrong did from the comfort of the ground.
+                    <br><br>
+                    I worked on this project as an intern of Spring 2024 alongside one other intern at the time. My role mainly consisted of integrating hand controllers and hand tracking features to the experience. This includes being able to control the virtual joysticks and buttons in the aircraft cockpit and programming the related plane physics and event sequences. Other than that, I have worked on polishing multiple features and refactoring a lot of the code to be more scalable for future interns. 
+                    <br><br>
+                    We used Godot as the core game engine to build the experience. In addition to the VR headset and controllers, the project utilizes a motion chair to provide haptic feedback to the users and simulate the physics of the aircraft.
+                </p>
+                <!-- <img src="images/airplay-overview.png"/> -->
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    As part of my intern work, I worked on several features including: 
+                </p>
+                <ul>
+                    <li>Refactored input controls to allow for multiple inputs (i.e. mouse + keyboard, physical joystick, VR controllers, hand tracking, autopilot)</li>
+                    <li>Integrated hand controllers using HTC Vive Wand Controllers</li>
+                    <li>Imported hands and animations</li>
+                    <li>Built an autopilot mode as an option if users do not want to control the aircraft</li>
+                    <li>Integrated HTC Vive Tracker puck to offset unpredictable skew of Yaw Motion Chair relative to the headset</li>
+                    <li>Simulated aircraft gauges (i.e. attitude, angle of attack, roll rate)</li>
+                    <li>Built several user settings (i.e. controller sensitivity, autopilot mode, freeflight mode, chair mode, scene selection)</li>
+                    <li>Built several dev operator keys to help when demoing the project (i.e. abort experience, reorient headset)</li>
+                    <li>Programmed the chair to be less severe and slowly zeroing the chair state when the experience ends</li>
+                    <li>Programmed hand controller haptics to match the shaking of the chair</li>
+                    <li>Polished the world environment by improving the sky horizon and fading in space and stars</li>
+                    <li>Optimized and retextured models to be more performant</li>
+                    <li>Rehauled office scene which served as the storytelling / embodiment aspect of the experience where users learn about Neil Armstrong and the historical context of the X-15 flight</li>
+                    <li>Demoed our project at a booth at IMS (Indianapolis Motor Speedway) which held the NASA Solar Eclipse event</li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+                    <p>To be updated ...</p>
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                // 'images/airplay-gallery-1.png',
+                // 'images/airplay-gallery-2.gif',
+                // 'images/airplay-gallery-3.png',
+                // 'images/airplay-gallery-5.gif',
+                // 'images/airplay-gallery-4.png',
+                // 'images/airplay-gallery-6.JPG',
+                // 'images/airplay-gallery-10.gif',
+                // 'images/airplay-gallery-7.JPG',
+                // 'images/airplay-gallery-8.JPG',
+                // 'images/airplay-gallery-9.JPG',
+                // 'images/airplay-gallery-11.gif',
+                // 'images/airplay-gallery-12.gif',
+                // 'images/airplay-gallery-13.jpg'
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

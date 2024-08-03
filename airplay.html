@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | airplay</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <iframe class="header-video" src="https://player.vimeo.com/video/322096749?h=d4f046f705&color=f3f6f7&title=0&byline=0&portrait=0" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <div class="header">
+        <div class="header-title">
+            <h1>AIRPLAY</h1>
+            <p>Inclusive AR Game Development
+                <br>
+                HCI Research @ University of Michigan
+            </p>
+            <div class="header-link"><a href="https://www.igym.solutions/">Website</a></div>
+
+        </div>
+        <div class="header-desc">
+            <p>iGYM is an augmented reality system for inclusive play and exercise. It is designed for school and community-based sport or recreation facilities seeking to provide novel and accessible ways for people with motor disabilities and their non-disabled peers to play and exercise together.</p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Software Developer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>ROS</li>
+                        <li>OpenCV</li>
+                        <li>Python</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Professors</p>
+                    <ul>
+                        <li>Roland Graf</li>
+                        <li>Hunseok Kim</li>
+                        <li>Michael Nebeling</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>Jan 2023 - Dec 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    In traditional sport and entertainment settings, players with mobility disabilities typically do not have opportunities to engage in physical play with their peers without disabilities and vice versa due to physical and social barriers. Addressing these barriers is critical for reducing the risk of developing serious health problems and secondary health conditions, such as pain, fatigue, depression and obesity, as well as for increasing a sense of empowerment, normalcy, and acquisition of social capital.
+                    <br><br>
+                    The key idea behind the AiR Play project is to remove these barriers to play by combining some of the elements and well-known benefits of adaptive sports and sports in general with the whole-body interaction modalities of exergames to create an inclusive, projected augmented reality (AiR) game environment that is accessible and enjoyable for people of all abilities.
+                </p>
+                <img src="images/airplay-overview.png"/>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    As part of the development team, I worked on several features including: 
+                </p>
+                <ul>
+                    <li>Polished existing air hockey game, including adding sound effects, win/lose logic</li>
+                    <li>Created a new shape catcher game and integrated it with the existing game system with Unity/ROS</li>
+                    <li>Created tutorial animations in Unity</li>
+                    <li>Communicated with the design team frequently to implement core features</li>
+                    <li>Improved player detection and fix issues with color spaces and lighting</li>
+                    <li>Fixed issue of multiple circles per player with erosion and dilation</li>
+                    <li>Developed a one-click start-up script for non-developer usage</li>
+                    <li>Wrote and created website for development documentation for future members of the team</li>
+                    <li>Prepared table demo for Innovation Fair</li>
+                    <li>Connected the web UI with the ROS-Unity game system so game can be controlled with mobile phone in real-time</li>
+                    <li>Created and saved multiple parameters in advanced settings</li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/airplay-gallery-1.png',
+                'images/airplay-gallery-2.gif',
+                'images/airplay-gallery-3.png',
+                'images/airplay-gallery-5.gif',
+                'images/airplay-gallery-4.png',
+                'images/airplay-gallery-6.JPG',
+                'images/airplay-gallery-10.gif',
+                'images/airplay-gallery-7.JPG',
+                'images/airplay-gallery-8.JPG',
+                'images/airplay-gallery-9.JPG',
+                'images/airplay-gallery-11.gif',
+                'images/airplay-gallery-12.gif',
+                'images/airplay-gallery-13.jpg'
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

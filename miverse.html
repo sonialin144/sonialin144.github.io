@@ -4,6 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | miverse</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <!-- <iframe class="header-video" height="480" src="https://www.youtube.com/embed/hKu_qyiPyLE?si=Njw5_J1SHXrsaRiV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    <img src="images/miverse-illust.PNG" style="height: 600px; width: 100%; object-fit: cover;">
+    <!-- <img src="images/miverse-buildings.png"> -->
+    <div class="header">
+        <div class="header-title">
+            <h1>MIVerse</h1>
+            <p>ARI Festifall Demo</p>
+            <!-- <div class="header-link"><a href="https://www.eecs498p3.connormckinley.com">Website</a></div> -->
+        </div>
+        <div class="header-desc">
+            MIVerse is an interactive demo created to promote the XR club ARI for Festifall, the annual club fair at the University of Michigan. 
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Programmer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Blender</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Members</p>
+                    <ul>
+                        <li>Emilee Meng</li>
+                        <li>Sonia Lin</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Duration</p>
+                    <p>2 weeks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    We built this interactive PC/VR demo to showcase at our booth at the university's club fair. 
+                    It serves as an engaging exhibit to help recruit more members for the XR club. 
+                    We built both a PC version and VR version: the PC version is used for our outdoor exhibit where
+                    VR would not be feasible to use, and the VR version is for students to play and build additional
+                    features when they join the club as a series of Unity/Blender workshops. <br><br>
+                    Key Features: 
+                    <ul>
+                        <li>Users can walk around and interact with various characters explaining the three categories
+                            of XR: AR, VR, MR. 
+                        </li>
+                        <li>
+                            Users can draw virtual graffiti on the walls in VR. 
+                            <ul>
+                                <li>In the PC version, users can draw their designs
+                                    on a piece of paper. Once we take a picture of the drawing on our phone and import
+                                it into a folder on our PC, our app will automatically convert it into a transparent png 
+                            using a FloodFill algorithm and prompts the user to place their graffiti on the wall.</li>
+                            <li>In the VR version, users can draw on the walls using their controllers.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    I worked on several features including: 
+                </p>
+                <ul>
+                    <li>Programmed core interactions, animations, and dialogue system</li>
+                    <li>3D modeled two of the buildings</li>
+                    <li>Illustrated NPCs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                "images/miverse-1.png",
+                "images/miverse-2.png",
+                "images/miverse-3.png",
+                "images/miverse-4.png",
+                "images/miverse-5.png",
+                "images/miverse-buildings.png",
+                "images/miverse-illust.png",
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href = "art.css">
     <link rel="icon" type="image/x-icon" href="">
@@ -25,7 +159,6 @@
         <div class="header-title">
             <h1>MIverse</h1>
             <p>learn about XR by interacting with characters in a cyberpunk universe!</p>
-            <!-- <p>2022</p> -->
         </div>
         <a href="#main"><div class="arrow"></div></a>
     </header>
@@ -66,4 +199,4 @@
         <script src="cursor.js"></script>
         <div class='cursor' id="cursor"></div>
 </body>
-</html>
+</html> -->

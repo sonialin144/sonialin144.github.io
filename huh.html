@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | huh!?</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <iframe class="header-video" height="480" src="https://www.youtube.com/embed/p7zyFa7Ndis?si=QnhFZlTvGpraqEO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="header">
+        <div class="header-title">
+            <h1>Huh!? I've Been Hired By Alien Researchers!</h1>
+            <p>AR Language Learning
+                <br>
+                Grand Prize Winner @ Lightship Real-World AR Challenge 2023
+            </p>
+            <div class="header-link"><a href="https://lightship.dev/blog/lightship-real-world-ar-challenge-recap/">Winner Announcement</a></div>
+        </div>
+        <div class="header-desc">
+            Our project, "Huh!? I’ve Been Hired By Alien Researchers", is an AR Language learning world exploration game meant to motivate users to one of the most tedious parts of language learning, memorizing vocabulary. Players are introduced to the ICRC, the Interplanetary Communications Research Company whose aim is to solve language barrier problems by studying how human brains memorize words. Dr. Zero, their boss, offers you a job to help them!
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Unity AR Developer</li>
+                        <li>3D Modeler</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Blender</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Members</p>
+                    <ul>
+                        <li>Xinying Chew</li>
+                        <li>Sonia Lin</li>
+                        <li>Emilee Meng</li>
+                        <li>Ruifeng Xu</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Duration</p>
+                    <p>2 weeks</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    One of the inspirations for our application was the multitude of studies on memory retention ability during exercise. After reading and cross-referencing numerous papers (all linked  below), similar conclusions have been drawn: information retention is increased during light to moderate aerobic exercise.  Adding to this, there are also studies about the positive correlation of spacing out memorization between different sessions. Taking these ideas and world exploration into account, we were inspired to create an application for memorizing foreign vocabulary while walking from place to place, aiming for better word retention.
+                    <br><br>
+                    Research Papers discussing the idea about light to moderate exercise while memorizing improving memory retainment:
+
+                    <ul>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3658977/">Physical Exercise during Encoding Improves Vocabulary Learning in Young Female Adults</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4942640/">The Effects of Acute Physical Exercise on Memory, Peripheral BDNF, and Cortisol in Young Adults</a></li>
+                        <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0177624">Physical Activity Improves Learning a Second Language</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6719811/#:~:text=Simultaneous%20memorization%20and%20exercise%20produced,memorization%20after%20or%20without%20exercise">Effectiveness of Studying When Coupled with Exercise-Induced Arousal</a></li>
+                        <li><a href="https://www.nytimes.com/2022/10/07/well/move/exercise-memory.html">New Study Strengthens the Link Between Exercise and Memory</a></li>
+                    </ul>
+
+                    <br>
+                    During the Jam period, we created this demo, modeled + handpainted + rigged all 3D models[excluding the Niantic Yeti mascot], and created all 2D UI assets.
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    As a core member of the team, I worked on several features including: 
+                </p>
+                <ul>
+                    <li>Modeled the base prototypes of the characters</li>
+                    <li>Developed AR vocabulary game and quiz mechanics</li>
+                    <li>Implemented dialogue and chat messenging system</li>
+                    <li>Integrated NPC animations and spawning with occlusion and meshing</li>
+                    <li>Ensured scalability for future development</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    Our future steps include:
+                </p>
+                <ul>
+                    <li>New NPC characters</li>
+                    
+                </ul>
+            </div>
+        </div> -->
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/huh-gallery-1.png',
+                'images/huh-gallery-2.png',
+                'images/huh-gallery-3.png'
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

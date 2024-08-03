@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | mentor reality</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <iframe class="header-video" src="https://www.youtube.com/embed/mf5XGeeaZgA?si=1eClg83vAvM6IdZd" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <div class="header">
+        <div class="header-title">
+            <h1>MENTOR REALITY</h1>
+            <p>Connecting Mentors and Hackers
+                <br>
+                Submission @ MIT Reality Hack 2024
+            </p>
+            <div class="header-link"><a href="https://devpost.com/software/mentar">Devpost</a></div>
+
+        </div>
+        <div class="header-desc">
+            <p>Due to the numerous challenges to in-person mentorship at the hackathon as a result of the large amount of attendees and complex event structures, we built a mixed reality application as a solution to help alleviate those struggles and foster an improved communication channel between mentors and hackers.</p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>XR Developer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Meta Quest 3</li>
+                        <li>Meta Presence Platform</li>
+                        <li>Node.js</li>
+                        <li>HTML/CSS</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Members</p>
+                    <ul>
+                        <li>Xinying Chew</li>
+                        <li>Sonia Lin</li>
+                        <li>Emilee Meng</li>
+                        <li>Zhengyang Yang</li>
+                        <li>Yue You</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Duration</p>
+                    <p>2.5 days</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    Mentor Reality is a mixed reality tool developed for the Meta Quest 3 to facilitate the connection between mentors and teams at hackathons in need of assistance. Through the team web portal, teams can submit their requests via tickets, and mentors will receive notifications directly on their headsets to locate and address these requests. Our solution introduces a controller-free hand tracking system with an interactive sphere that visualizes team requests, guiding mentors seamlessly to the teams in need.
+                    <br><br>
+                    Before the hackathon begins, organizers visit each table and spawn a spatial anchor in the form of a glowing ball. This becomes the primary means of communication between mentors and teams, emitting different colors depending on the team's status. Throughout the hackathon, teams can use the web portal by submitting their team number to sign in, granting access to their personalized checklist, which event organizers can customize according to their preferences. To the right of the personal checklist is the help request form, where teams can initiate one by clicking "create a help ticket." The form prompts users to specify their request type, the hardware they're using, and a description of their problem.
+                    <br><br>
+                    After submission, the sphere located at the corresponding table will change from purple (idle state) to red (problem state), indicating the active status of the help request.
+                    <br><br>
+                    Because hacking rooms can be vast and crowded, an additional feature we added is the map feature, allowing mentors to quickly locate the table if it is in a different room. Additionally, the red status ball contrasts significantly with the purple idle ball, making it easy to find in a room.
+                    <br><br>
+                    Once the mentor reaches the table, they can tap the red floating ball to get a summary of the team's help request. From there, the ball will turn yellow, signaling active assistance by mentors.
+                    <br><br>
+                    If they can resolve the problem, the mentor can click the "solved" button, and the ball will turn green for a few seconds before returning to the purple idle state. However, if the mentor needs others to take a look, they can press "place back," and the ball will return to the table, turning red.
+                    <br><br>
+                    An additional interaction we added to foster mentor and team connections is the "like" system. While wearing the headset, mentors can give a real-life thumbs up, adding 1 like to the team's portal.
+                    <br><br>
+                    With our system and web portal, we can easily assist mentors and teams in ensuring their project is on the right track!
+                </p>
+                <!-- <img src="images/airplay-overview.png"/> -->
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <p>
+                    As part of development side of the team, I focused mainly on developing the XR portion:
+                </p>
+                <ul>
+                    <li>Integrated hand tracking features to recognize gestures such as grabbing, palm open to trigger map, and thumbs up for our liking feature</li>
+                    <li>Built spatial anchor points feature and animations</li>
+                    <li>Connected data to web server</li>
+                    <li>Implemented UI and functionality</li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+                    <!-- <p>To be updated ...</p> -->
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/mentor-reality-gallery-1.png',
+                'images/mentor-reality-gallery-2.jpg'
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>
