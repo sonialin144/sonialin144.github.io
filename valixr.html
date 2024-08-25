@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | valixr</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <img src="images/valixr-thumbnail.png" style="height: 600px; width: 100%; object-fit: contain;">
+
+    <div class="header">
+        <div class="header-title">
+            <h1>VALIXR</h1>
+            <p>Earth Science Visualization Tool in VR
+                <br>
+                Internship @ NASA Goddard Space Flight Center
+            </p>
+
+        </div>
+        <div class="header-desc">
+            <p>
+            GEOS Visualization And Lagrangian dynamics Immersive eXtended Reality Tool (VALIXR) for Scientific Discovery.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Unity Developer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>HP Reverb</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Mentor</p>
+                    <ul>
+                        <li>Thomas Grubb</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>June 2024 - Present</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <hr style="width: 94%;">
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    VALIXR will provide Earth scientists: 
+                    <ul>
+                        <li>
+                            Enhanced scientific discovery of key
+                            phenomena in the Earth system through the
+                            combination of advanced visualization and
+                            quantitative LD with NASA models and data
+                        </li>
+                        <li>
+                            An immersive, interactive, and animated
+        visualization of GEOS fields and particle
+        trajectories to allow scientists to intuitively
+        initialize LD for subsequent GEOS model runs
+                        </li>
+                        <li>
+                            Intuitive initialization, manipulation and
+        interaction with GEOS data and trajectory
+        paths through the use of XR
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <img src="images/valixr-poster.jpg">
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/valixr-gallery-1.JPG',
+                'images/valixr-gallery-2.JPG',
+                'images/valixr-gallery-3.JPG',
+                'images/valixr-gallery-4.JPG',
+                'images/valixr-gallery-5.JPG',
+                'images/valixr-gallery-6.JPG',
+                'images/valixr-gallery-7.jpg',
+                'images/valixr-gallery-8.jpg',
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

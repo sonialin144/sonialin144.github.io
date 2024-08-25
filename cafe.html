@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | dream cafe</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <img src="images/cafe-gallery-12.png" style="height: 600px; width: 100%; object-fit: contain;">
+    <!-- <iframe class="header-video" height="480" src="https://www.youtube.com/embed/DDXr5ihO84U?si=Q9TxuwJyy9bUBcRn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+
+    <div class="header">
+        <div class="header-title">
+            <h1>Dream Cafe</h1>
+            <p>Projection Mapping Cafe
+            </p>
+        </div>
+        <div class="header-desc">
+            A projection mapping pop-up cafe in someone's apartment for fun.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Cook :></li>
+                        <li>Animator</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Adobe After Effects</li>
+                        <li>Figma</li>
+                        <li>Projector</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Team Size</p>
+                    <ul>
+                        <li>3</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>One week</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    A spontaneous idea to do a mini projection mapping pop-up cafe. We invited two guests to experience this immersive dining experience. Inspired by Usamaru Cafe and Le Petit Cafe.
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/cafe-thumbnail.gif',
+                'images/cafe-gallery-1.jpg',
+                'images/cafe-gallery-2.jpg',
+                'images/cafe-gallery-3.jpg',
+                'images/cafe-gallery-4.jpg',
+                'images/cafe-gallery-5.jpg',
+                'images/cafe-gallery-6.gif',
+                'images/cafe-gallery-7.gif',
+                'images/cafe-gallery-8.gif',
+                'images/cafe-gallery-9.gif',
+                'images/cafe-gallery-10.png',
+                'images/cafe-gallery-11.png',
+                'images/cafe-gallery-12.png',
+            ];
+
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

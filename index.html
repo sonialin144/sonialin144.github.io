@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
     <link rel="stylesheet" href = "html5reset.css">
-    <link rel="stylesheet" href = "style.css">
+    <link rel="stylesheet" href = "new.css">
     <link rel="icon" type="image/x-icon" href="">
     <title>sonia lin | portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,22 +32,32 @@
                 <a href="mailto: sonia.lin.144@gmail.com"><img class="header-link hover-target" src="images/email.png" alt="email logo"></a>
             </div>
         </div>
-        <div class="graphic">
-            <img src="images/television.png" alt="background png">
-            <nav>
-                <div class="about">
-                    <div class="hover-target">about</div>
-                    <img src="images/right-arrow-black-triangle.png" alt="arrow indicator" class="nav-arrow">
+        <div class="graphic-header">
+            <div class="graphic">
+                <img src="images/television.png" alt="background png">
+                <!-- <nav>
+                    <div class="about">
+                        <div class="hover-target">about</div>
+                        <img src="images/right-arrow-black-triangle.png" alt="arrow indicator" class="nav-arrow">
+                    </div>
+                    <div class="contact">
+                        <div class="hover-target">contact</div>
+                        <img src="images/right-arrow-black-triangle.png" alt="arrow indicator" class="nav-arrow">
+                    </div>
+                    <div class="projects">
+                        <a href="#projects" class="hover-target">projects</a>
+                        <img src="images/right-arrow-black-triangle.png" alt="arrow indicator" class="nav-arrow">
+                    </div>
+                </nav> -->
+            </div>
+            <div class="header-container">
+                <div class="title-container">
+                    <h1>Sonia Lin</h1>
                 </div>
-                <div class="contact">
-                    <div class="hover-target">contact</div>
-                    <img src="images/right-arrow-black-triangle.png" alt="arrow indicator" class="nav-arrow">
+                <div class="blurb">
+                    <h2>cs @ university of michigan</h2>
                 </div>
-                <div class="projects">
-                    <a href="#projects" class="hover-target">projects</a>
-                    <img src="images/right-arrow-black-triangle.png" alt="arrow indicator" class="nav-arrow">
-                </div>
-            </nav>
+            </div>
         </div>
         <div class="about-panel">
             <h2>about me</h2>
@@ -62,176 +72,175 @@
             <p>Please contact me at <a href="mailto: sonia.lin.144@gmail.com">sonialin@umich.edu</a> if interested in having a chat!</p>
             <img src="images/close.png" alt="exit button" class="contact-close hover-target">
         </div>
-        <div class="header-container">
-            <div class="title-container">
-                <h1>i'm sonia lin,</h1>
-                <h1>programmer,</h1>
-                <h1>designer,</h1>
-            </div>
-            <div class="blurb">
-                <h2>cs | design | university of michigan</h2>
-            </div>
-        </div>
-    </header> 
+    </header>
     <main id="projects">
-        <h1>my projects</h1>
-        <div class="filter-button-container">
-            <button class="btn active hover-target" onclick="filterSelection('all')">All</button>
-            <button class="btn hover-target" onclick="filterSelection('xr')">AR/VR/MR</button>
-            <button class="btn hover-target" onclick="filterSelection('games')">Games</button>
-            <button class="btn hover-target" onclick="filterSelection('web')">Web</button>
-            <button class="btn hover-target" onclick="filterSelection('ui')">UI/UX</button>
-            <button class="btn hover-target" onclick="filterSelection('arts')">Art</button>
-          </div>
+        <h1>featured work</h1>
         <div class="projects-container">
-            <div class="item art arts page">
-                <h2>3D Modeling / Art</h2>
-                <p class="desc">Click to view some of my illustration and 3d modeling works!</p>
-                <p class="tag">CSP / Blender</p>
+            <div class="item valixr xr page">
+                <h2>VALIXR - Earth Science Visualization (Internship)</h2>
+                <img src="images/valixr-thumbnail.png" onclick="window.location='valixr.html'">
+                <p class="desc">A scientific exploration and analysis mixed augmented and virtual reality tool with integrated Lagrangian Dynamics (LD) to help scientists identify, track, and understand the evolution of Earth Science phenomena in the NASA GEOS model.</p>
+                <div class="tags">
+                    <p class="tag">Unity</p>
+                    <p class="tag">C#</p>
+                    <p class="tag">VR</p>
+                    <p class="tag">Data Visualization</p>
+                </div>
             </div>
-            <div class="item web portfolio page">
-                <h2>Portfolio v3 :3 (Ongoing)</h2>
-                <p class="desc">Click to view my updated portfolio with more detail. Currently in progress...</p>
-                <p class="tag">HTML / CSS / JS</p>
+            <div class="item greater-heights xr page">
+                <h2>GREATER HEIGHTS VR (Internship)</h2>
+                <img src="images/greater-heights.png" onclick="window.location='greater-heights.html'">
+                <p class="desc">The Greater Heights project is a Virtual Reality (VR) experience that aims to engage the public with the work that NASA does through interactive story telling and education. The experience allows the user to embody Neil Armstrong in a historic flight of the X-15.</p>
+                <div class="tags">
+                    <p class="tag">Godot</p>
+                    <p class="tag">GDScript</p>
+                    <p class="tag">VR</p>
+                    <p class="tag">Motion Chair</p>
+                </div>
             </div>
-            <div class="item airplay xr web games page">
-                <h2>AiRPlay (Ongoing)</h2>
-                <p class="desc">Developing for an inclusive AR play and exercise system using Unity and ROS2.</p>
-                <p class="tag">Unity / C# / ROS2 / OpenCV / React</p>
+            <div class="item tontachi xr page">
+                <h2>TONTACHI AR (Internship)</h2>
+                <img src="images/tontachi-thumbnail.png" onclick="window.location='tontachi.html'">
+                <p class="desc">Tontachi is a play and earn, augmented reality pet racing simulator. This AR-Blockchain gamified experience allows your digital pet Pig ‘Ton’ to have a tethered connection to the world around you.</p>
+                <div class="tags">
+                    <p class="tag">Unity</p>
+                    <p class="tag">Niantic</p>
+                    <p class="tag">AR</p>
+                    <p class="tag">Blockchain</p>
+                    <p class="tag">Figma</p>
+                </div>
+            </div>
+            <div class="item airplay xr games page">
+                <h2>AIRPLAY</h2>
+                <img src="images/airplay-gallery-5.gif" onclick="window.location='airplay.html'">
+                <p class="desc">iGYM is an augmented reality system for inclusive play and exercise. It is designed for school and community-based sport or recreation facilities seeking to provide novel and accessible ways for people with motor disabilities and their non-disabled peers to play and exercise together.</p>
+                <div class="tags">
+                    <p class="tag">Unity</p>
+                    <p class="tag">C#</p>
+                    <p class="tag">ROS2</p>
+                    <p class="tag">OpenCV</p>
+                    <p class="tag">React</p>
+                </div>
             </div>
             <div class="item claws xr page">
-                <h2>CLAWS (Ongoing)</h2>
-                <p class="desc">Collaborating in a 60 student team to build an application on the HoloLens to help astronauts on lunar missions.</p>
-                <p class="tag">Unity / C# / MRTK / HoloLens</p>
+                <h2>CLAWS</h2>
+                <img src="images/claws-thumbnail.gif" onclick="window.location='claws.html'">
+                <p class="desc">The University of Michigan’s CLAWS (Collaborative Lab For Advancing Work in Space) Team is a multi-disciplinary group of undergraduate and graduate students that has competed in the NASA SUITS Challenge since 2018. </p>
+                <div class="tags">
+                    <p class="tag">Unity</p>
+                    <p class="tag">C#</p>
+                    <p class="tag">MRTK</p>
+                    <p class="tag">HoloLens</p>
+                </div>
             </div>
-            <div class="item witch web games page">
-                <h2>Witch Task (Ongoing)</h2>
-                <p class="desc">Building a cozy gamified productivity task manager app.</p>
-                <p class="tag">Unity / C# / Procreate / React</p>
-            </div>
-            <div class="item detroit xr page">
-                <h2>Visit Detroit AR (Ongoing)</h2>
-                <p class="desc">Building a mobile AR tourism app in collaboration with Visit Detroit.</p>
-                <p class="tag">Unity / C# / Google Geospatial ARCore</p>
+            <div class="item witch games page" onclick="window.location='witch-task.html'">
+                <h2>WITCH TASK (Ongoing)</h2>
+                <img src="images/witch-task-thumbnail.gif">
+                <p class="desc">Witch Task is a productivity tool for teens and young adults that provides a gamified systematic approach to task management, helping in time management, organization, and prioritization.</p>
+                <div class="tags">
+                    <p class="tag">Unity</p>
+                    <p class="tag">C#</p>
+                    <p class="tag">Procreate</p>
+                    <p class="tag">React</p>
+                </div>
             </div>
             <div class="item niantic xr page">
-                <h2>Huh!? I've Been Hired By Aliens!</h2>
-                <p class="desc">Developed an AR mobile app for language learning and world exploration.</p>
-                <p class="tag">Unity / C# / AR / Niantic</p>
-            </div>
-            <div class="item pico xr ui page">
-                <h2>MISA</h2>
-                <p class="desc">Designed a personal interview assistant program in VR</p>
-                <p class="tag">Blender / Figma / VR / PICO</p>
+                <h2>HUH!? IVE BEEN HIRED BY ALIENS</h2>
+                <img src="images/huh-thumbnail.gif" onclick="window.location='huh.html'">
+                <p class="desc">Our project, 'Huh?! I’ve Been Hired By Alien Researchers,' is an AR language-learning world exploration game designed to motivate users through one of the most tedious aspects of language learning: memorizing vocabulary. </p>
+                <div class="tags">
+                    <p class="tag">Unity</p>
+                    <p class="tag">C#</p>
+                    <p class="tag">AR</p>
+                    <p class="tag">Niantic</p>
+                </div>
             </div>
             <div class="item train xr page">
-                <h2>1:AM Train</h2>
-                <p class="desc">Built a judgement free VR space for users to destress and reflect.</p>
-                <p class="tag">Unity / C# / Blender / VR</p>
+                <h2>1:AM TRAIN</h2>
+                <img src="images/train-thumbnail.gif" onclick="window.location='1am-train.html'">
+                <p class="desc">To solve the problem that it’s easy to feel overwhelmed by daily life struggles, and to help improve the well-being of those who feel stressed or overwhelmed, we have come up with a VR app that allows users to decompress and engage in something fun, calming, and relaxing.</p>
+                <div class="tags">
+                    <p class="tag">Unity</p>
+                    <p class="tag">C#</p>
+                    <p class="tag">Blender</p>
+                    <p class="tag">VR</p>
+                </div>
             </div>
-            <div class="item vocab xr page">
-                <h2>Vocab Village</h2>
-                <p class="desc">Developed an immersive vocabulary learning application for young English learning students.</p>
-                <p class="tag">Unity / C# / VR / OpenAI</p>
-            </div>
-            <div class="item tennis games page">
-                <h2>GOGO Tennis</h2>
-                <p class="desc">Built a fun multiplayer fitness app. Using mobile devices as remote controllers utilizing their gyroscope sensors and accelerometers.</p>
-                <p class="tag">Unity / C# / Blender / Multiplayer</p>
-            </div>
-            <div class="item cygnus xr page">
-                <h2>Cygnus</h2>
-                <p class="desc">Developed an interactive storytelling experience for the Looking Glass Portrait with Leap Motion Controllers.</p>
-                <p class="tag">Unity / C# / Looking Glass / Leap Motion / Blender</p>
-            </div>
-            <div class="item miverse xr page">
-                <h2>MIverse</h2>
-                <p class="desc">Developed an informative VR demo for the XR club on campus</p>
-                <p class="tag">Unity / C# / Blender / VR</p>
-            </div>
-            <div class="item nuclear xr page">
-                <h2>E3 Nuclear Engineering</h2>
-                <p class="desc">Developed an educational nuclear reactor labelling system in VR for a brand new course</p>
-                <p class="tag">Unreal 4 / VR</p>
-            </div>
-            <div class="item a2go xr page">
-                <h2>A2GO</h2>
-                <p class="desc">Location-based AR mobile app for Ann Arbor tourists</p>
-                <p class="tag">Unity / Mapbox SDK</p>
-            </div>
-            <div class="item cse-sim xr page">
-                <h2>CSE Simulator</h2>
-                <p class="desc">Built a CSE Simulator in VR based off of Job Simulator with a horror twist.</p>
-                <p class="tag">Unreal 5 / VR</p>
-            </div>
-            <div class="item envision ui page">
-                <h2>envision</h2>
-                <p class="desc">Designed a mobile app prototype for students searching for jobs and internships.</p>
-                <p class="tag">Figma</p>
-            </div>
-            <div class="item silly">
-                <h2>EECS 281: SillyQL</h2>
-                
-                <p class="desc">Designed a program in C++ to emulate a basic relational database with an interface based on a subset of a standard query language.</p>
-                <p class="tag">C++</p>
-            </div>
-<!--            https://www.figma.com/file/EgNYbSgoDOCr2SVxICKkvp/DP1-Prototype?node-id=0%3A1-->
-            <div class="item disease">
-                <h2>Disease Prediction Model</h2>
-                <p class="desc">Implemented a disease prediction model based on a given set of symptoms using KNN and Decision Trees algorithm.</p>
-                <p class="tag">Python</p>
-            </div>
-            <!-- <div class="item astro games">
-                <h2>Adventures of Astro Boy</h2>
-                <p class="desc">Implemented BFS pathfinding algorithm and waypoints in 3D chase simulation game. Worked on programming and UI design.</p>
-                <p class="tag">Unity / C#</p>
-            </div>
-            <div class="item hunt games">
-                <h2>Treasure Hunt</h2>
-                <p class="desc">Developed 3D first-person game utilizing AI enemy agents. Worked on programming and UI design.</p>
-                <p class="tag">Unity / C# / Blender</p>
+            <!-- <div class="item art arts page">
+                <h2>3D MODELING | ART</h2>
+                <img src="images/idk.jpg" onclick="window.location='art.html'">
+                <p class="desc">Click to view some of my 3d modeling and art works!</p>
+                <div class="tags">
+                    <p class="tag">Blender</p>
+                </div>
             </div> -->
-            <div class="item ari web page">
-                <h2>ARI Website</h2>
-                <p class="desc">Redesigned and developed a fully responsive webpage for Alternate Reality Initiative for my class.</p>
-                <p class="tag">HTML / CSS / JS</p>
+        </div>
+        <h1>other work</h1>
+        <div class="other-container">
+            <div class="other-item" onclick="window.location='art.html'">
+                <img src="images/idk.jpg">
+                <p>3D Modeling | Art</p>
             </div>
-            <div class="item job arts page">
-                <h2>Journal of Biology 2019-2020</h2>
-                <p class="desc">Led illustration for a school biology journal publication as a creative director. Facilitated organization and outline of digital journal.</p>
-                <p class="tag">Canva</p>
-<!--                https://bxscience.edu/pdf/JOB2019-2020.pdf-->
+            <div class="other-item" onclick="window.location='misa.html'">
+                <img src="images/misa-thumbnail.gif">
+                <p>MISA</p>
             </div>
-            <div class="item yg arts page">
-                <h2>Young Governors 2020</h2>
-                <p class="desc">Led illustration for a food compendium book highlighting local restaurants/businesses in order to bridge gaps between cultures.</p>
-                <p class="tag">Canva</p>
+            <div class="other-item" onclick="window.location='mentor-reality.html'">
+                <img src="images/mentor-thumbnail.gif">
+                <p>Mentor Reality</p>
             </div>
-            <div class="item edel ui page">
-                <h2>edel</h2>
-                <p class="desc">Designed a desktop app prototype for students to anonymously post messages as a resource for mental health.</p>
-                <p class="tag">Figma</p>
+            <div class="other-item" onclick="window.location='visit-detroit.html'">
+                <img src="images/detroit-thumbnail.jpg">
+                <p>Visit Detroit AR</p>
             </div>
-            <div class="item roguelite games page">
-                <h2>roguelite</h2>
-                <p class="desc">Built a mini roguelite game to practice Unity. Made all assets except music. Password to view is "idk".</p>
-                <p class="tag">Unity</p>
+            <div class="other-item" onclick="window.location='vocab-village.html'">
+                <img src="images/vocab-village-thumbnail.gif">
+                <p>Vocab Village</p>
             </div>
-            <div class="item study web page">
-                <h2>workspace app</h2>
-                <p class="desc">Built a study/workspace app with vaporwave aesthetic using three js.</p>
-                <p class="tag">HTML / CSS / JS / Vuejs / Three / Blender</p>
+            <div class="other-item" onclick="window.location='miverse.html'">
+                <img src="images/miverse.PNG">
+                <p>MIverse</p>
             </div>
-            <div class="item plant xr page">
-                <h2>Daily Daisies</h2>
-                <p class="desc">Collaborated in a student team to build a mindfulness AR mobile app. Built functionality of AR camera using handtracking features.</p>
-                <p class="tag">Unity / C# / Blender / Lightship</p>
+            <div class="other-item" onclick="window.location='gogo-tennis.html'">   
+                <img src="images/tennis.png">
+                <p>GOGO Tennis</p>
             </div>
-            <div class="item">
-                <h2>More to Come!</h2>
-                <p class="desc">Currently working on learning more skills and frameworks.</p>
-                <p class="tag">...</p>
+            <div class="other-item">
+                <img src="images/cygnus-thumbnail.gif"onclick="window.location='https://devpost.com/software/cygnus'">
+                <p>Cygnus</p>
             </div>
+            <div class="other-item">
+                <img src="images/nuclear.png" onclick="window.location='nuclear-e3.html'">
+                <p>E3 Nuclear Engineering</p>
+            </div>
+            <div class="other-item">
+                <img src="images/futour-thumbnail.png" onclick="window.location='futour.html'">
+                <p>FUTOUR</p>
+            </div>
+            <div class="other-item">
+                <img src="images/cafe-thumbnail.gif" onclick="window.location='cafe.html'">
+                <p>Projection Mapping Cafe</p>
+            </div>
+            <!-- <div class="other-item">
+                <img src="images/cse-sim.png">
+                <p>CSE Simulator</p>
+            </div> -->
+            <!-- <div class="other-item">
+                <img src="images/milk.png">
+                <p>Workspace App</p>
+            </div> -->
+            <!-- <div class="other-item">
+                <img src="images/ari.png">
+                <p>ARI Website</p>
+            </div> -->
+            <!-- <div class="other-item">
+                <img src="images/envision.png">
+                <p>Envision</p>
+            </div> -->
+            <!-- <div class="other-item">
+                <img src="images/edel-thumbnail.png">
+                <p>Edel</p>
+            </div> -->
         </div>
     </main>
         <script src="effects.js"></script>

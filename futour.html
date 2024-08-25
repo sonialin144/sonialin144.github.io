@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | futour</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <img src="images/futour-thumbnail.png" style="height: 600px; width: 100%; object-fit: cover;">
+
+    <div class="header">
+        <div class="header-title">
+            <h1>FUTOUR</h1>
+            <p>An AR Tourism Mobile App
+                <br>
+                Internship / Contract Work @ Urban Electronics, Inc.
+            </p>
+            <div class="header-link"><a href="https://futour.city/">Website</a></div>
+
+        </div>
+        <div class="header-desc">
+            Discover your city with this innovative app blending geolocation and augmented reality for unique experiences.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>Unity Developer</li>
+                        <li>Designer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unity</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Internship Team Size</p>
+                    <ul>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>June 2024 - August 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <hr style="width: 94%;">
+        <div class="desc-section">
+            <h1>overview</h1>
+            <div class="desc-section-right">
+                <p>
+                    3D Pigs in the Real World. Tontachi is an Augmented Reality (AR) based pet simulator featuring cute piggies called "Tons". Like Tamagotchi, these little piggies need your love and care to stay afloat because living in our world is tough! You can take Tons outside (ex. into your room) via AR for a walk, to pet, feed, or other fun activities. As you explore outside, you may find key items that eventually help your piggy grow.
+                </p>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <div id="tasks">
+                    <div class="task-item">
+                        <h3>Refining TapWatch</h3>
+                        <p>
+                            TapWatch is a private labeled version of FUTOUR. It shares the same core functionality as the app itself but is customized solely for the client. This app is being used for visualizing water quality at different rivers/lakes.
+                            <br>
+                            Client is looking for revisions in the following areas:
+                            <ul>
+                                <li>Categorial Listing</li>
+                                <li>Information on POI to include Profile of Tester</li>
+                                <li>Revised Map view, zoomed out showing the entire United States w/consolidated POIs by region </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="task-item">
+                        <h3>Playground Feature</h3>
+                        <p>To make the FUTOUR app more robust regarding AR Activations, we’d like to do some R&D and integrate Google Geospatial Creator. Upon Familiarization with this Unity SDK, we’d like this integrated into FUTOUR to be stable alongside the Lightship SDK.</p>
+                        <ul>
+                            <li>Ideate, Design, and Implement initial shop designs focused on E-commerce.</li>
+                            <li>Research and test Google Geospatial Creator's compatibility with Niantic Lightship Maps.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/futour-gallery-1.png',
+                'images/futour-gallery-2.png',
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>

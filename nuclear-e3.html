@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/html5reset.css"> -->
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
+    <link rel="icon" type="image/x-icon" href="">
+    <title>sonia lin | e3 nuclear engineering</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
+</head>
+<body>
+    <img src="images/nuclear.png" style="height: 600px; width: 100%; object-fit: cover;">
+
+    <div class="header">
+        <div class="header-title">
+            <h1>E3 Nuclear Engineering VR</h1>
+            <p>Interactive VR Labeling System for Education
+            </p>
+
+        </div>
+        <div class="header-desc">
+            Over the summer, I worked on building a labelling system in VR as educational content for students in
+            the new introductory nuclear engineering course. Students in Engineering 100 would be engaging with VR 
+            models of nuclear reactors in order to better understand how they are designed and to be able to 
+            discuss how these reactors function with members of the general public when performing community outreach.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>VR Developer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unreal Engine</li>
+                        <li>Blender</li>
+                        <li>Houdini</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Team Size</p>
+                    <ul>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Timeline</p>
+                    <p>May 2023 - September 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="desc-section">
+            <h1>contribution</h1>
+            <div class="desc-section-right">
+                <ul>
+                    <li>Imported and optimized the existing Idaho National Laboratory fission reactor model
+                        and the Iter Tokamak fusion reactor model for VR
+                    </li>
+                    <li>Textured models</li>
+                    <li>
+                        Implemented labelling system including descriptions and a checking system
+                    </li>
+                    <li>
+                        Animated the fission reactor model to an exploded view for more convenient labelling 
+                    </li>
+                    <li>Communicated with nuclear engineering instructors to help improve details of the labelling system</li>
+                    <li>
+                        Explored procedural building generation using Blender and Houdini FX to build contextual environments
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="desc-section">
+            <h1>gallery</h1>
+            <div class="desc-section-right">
+                <div id="gallery">
+
+                </div>
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div id="modal-content">
+                  
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <script>
+            const imageSources = [
+                'images/e3-gallery-1.gif',
+                'images/e3-gallery-2.gif',
+                'images/IMG_6037.PNG',
+                'images/IMG_6038.PNG',
+                'images/IMG_6039.PNG',
+                'images/IMG_6040.PNG',
+                'images/IMG_6041.PNG',
+                'images/IMG_6042.PNG',
+                'images/IMG_6043.PNG',
+                'images/IMG_6044.PNG',
+            ];
+    
+            createGallery(imageSources);
+        </script>
+    </main>
+</body>
+</html>
