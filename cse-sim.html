@@ -4,43 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href = "art.css">
+    <link rel="stylesheet" href = "html5reset.css">
+    <link rel="stylesheet" href = "desc.css">
     <link rel="icon" type="image/x-icon" href="">
-    <title>sonia lin | cse simulator</title>
+    <title>sonia lin | cse sim</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="lightbox.js"></script>
 </head>
 <body>
-    <header>
-        <style>
-            header{
-                background-image: linear-gradient(#4b77b6, #90D9BC);
-            }
-        </style>
-        <div class="top-left">
-            <a href="index.html"><img src="images/two-fall-plant-leaves.png" alt="personal logo placeholder" class="hover-target"></a>
-            <p>sonia lin</p>
-            <a href="RESUME_LIN_Sonia.pdf" class="hover-target resume">resume</a>
-        </div>
+    <iframe class="header-video" src="https://www.youtube.com/embed/AHt1CYhPwSk?si=5GBFwUXX5PcK-tVH" height="480" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <div class="header">
         <div class="header-title">
             <h1>CSE Simulator</h1>
-            <p>eecs 498 p1</p>
-            <!-- <p>2022</p> -->
+            <p>
+                EECS 498: Extended Reality and Society - Project 1
+            </p>
+            <div class="header-link"><a href="https://gitlab.com/cmmck/eecs498-p1">GitLab Repo</a></div>
+
         </div>
-        <a href="#main"><div class="arrow"></div></a>
-    </header>
-    <main id="main">
-        <p>In homage of the legendary Slender: The Eight Pages, CSE Simulator has you running from a professor as you try to graduate by gathering EECS stickers. <br><br> 
-            We built this in Unreal Engine 5 and used SketchFab and Quixel Content for all the models and materials. <br><br>
-        </p>
-        <iframe height="720"
-        src="https://www.youtube.com/embed/AHt1CYhPwSk?si=5GBFwUXX5PcK-tVH">
-        </iframe>       
-        <p><br></p>
-        <a href="https://gitlab.com/cmmck/eecs498-p1">Link to Repository</a>
-    </main>
-        <script src="effects.js"></script>
-        <script src="cursor.js"></script>
-        <div class='cursor' id="cursor"></div>
+        <div class="header-desc">
+            <p>This VR experience was created as a learning project for the course EECS 498: Extended Reality and Society. The first half showcases a lot of the random requirements for the project to demonstrate our understanding. The second half displays our unique twist to the project. In homage of the legendary Slender: The Eight Pages, CSE Simulator has you running from a professor as you try to graduate by gathering EECS stickers. We built this in Unreal Engine 5 and used SketchFab and Quixel Content for all the models and materials.
+            </p>
+            <div class="header-desc-lists">
+                <div class="desc-list">
+                    <p>Role</p>
+                    <ul>
+                        <li>VR Developer</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Tools</p>
+                    <ul>
+                        <li>Unreal Engine 5</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Team Size</p>
+                    <ul>
+                        <li>2</li>
+                    </ul>
+                </div>
+                <div class="desc-list">
+                    <p>Duration</p>
+                    <p>2-3 weeks</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
