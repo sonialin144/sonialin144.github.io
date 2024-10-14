@@ -56,5 +56,34 @@
             </div>
         </div>
     </div>
+    <div class="desc-section">
+        <h1>gallery</h1>
+        <div class="desc-section-right">
+            <div id="gallery">
+
+            </div>
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div id="modal-content">
+              
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <script>
+        const imageSources = [
+            'images/unpleased-faang.GIF',
+            'images/pleased-faang.GIF',
+            'images/impressed-faang.GIF',
+        ];
+
+        createGallery(imageSources);
+    </script>
 </body>
 </html>
