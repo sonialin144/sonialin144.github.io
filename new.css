@@ -27,6 +27,7 @@ h1{
 main{
     /* margin: 0% 10%; */
     padding: 0% 10%;
+    padding-bottom: 25%;
     overflow: hidden;
     /* height: 100%; */
     position: relative;
